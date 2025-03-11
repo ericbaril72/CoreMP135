@@ -22,3 +22,6 @@ My own dev notes on using the M5Stack CoreMP135
 > adduser <user1>
 > usermod -aG sudo <user1>
 
+# Development
+## help links for uboot cmd_show_logo task
+https://stackoverflow.com/questions/53374999/custom-u-boot-environment-variables-using-buildroot
