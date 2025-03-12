@@ -25,6 +25,8 @@ My own dev notes on using the M5Stack CoreMP135
 # Development
 ## help links for uboot cmd_show_logo task
 https://stackoverflow.com/questions/53374999/custom-u-boot-environment-variables-using-buildroot
+https://bootlin.com/doc/training/buildroot/buildroot-slides.pdf
+
 
 # Change UBOOT displayed Logo
 On device power-up, a CoreMP135 logo gets shown within 1-2 seconds.  This one is transfered to the LCD via spi via the UBOOT bootloader command "show_logo"
