@@ -25,3 +25,29 @@ My own dev notes on using the M5Stack CoreMP135
 # Development
 ## help links for uboot cmd_show_logo task
 https://stackoverflow.com/questions/53374999/custom-u-boot-environment-variables-using-buildroot
+
+# Change UBOOT displayed Logo
+On device power-up, a CoreMP135 logo gets shown within 1-2 seconds.  This one is transfered to the LCD via spi via the UBOOT bootloader command "show_logo"
+Whitin your (workpath)/CoreMP135_buildroot  Directory
+> make uboot-menuconfig
+--> Boot options > Autoboot options > Delay in seconds before automatically booting = 0   ( way faster ! )
+
+> make uboot-rebuild
+( will download the uboot-custom package ready to modify and generate a new uboot-nodtc.bin )
+
+> make arm-trusted-firmware-rebuild
+( will update the fip.bin from the uboot-nodtc.bin previously updated )
+
+
+> make
+( will generate a new sdcard.img file )
+
+## edit cmd_show_logo.c
+output/build/uboot-custom/cmd/cmd_show_logo.c
+
+Quick BMP to "C" code convertion: https://notisrac.github.io/FileToCArray/
+BUT output file creates 16bits array ...
+using convert.py to generate proper 8bits array
+
+
+
