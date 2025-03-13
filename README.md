@@ -1,10 +1,15 @@
 # CoreMP135
 My own dev notes on using the M5Stack CoreMP135
+Thanks to @Johandevlabs, fellow user including notes to install older WifiDongle : https://github.com/johandevlabs/CoreMP135-Debian-notes
 
 ## Image burning
 - Once Image is burnt (sdcard.img ) to sdcard using BalenaEtcher 1.18.11 ( 1.19.25 was returning an error on file open )
 - [pre-compiled images](https://docs.m5stack.com/en/guide/linux/coremp135/image#1.download%20image%20file)
 
+## Libraries
+[M5Stack_Linux_Libs](https://github.com/m5stack/M5Stack_Linux_Libs)<br>
+[CoreMP135_buildroot](https://github.com/m5stack/CoreMP135_buildroot)<br>
+[CoreMP135_buildroot-external-st](https://github.com/m5stack/CoreMP135_buildroot-external-st)<br>
 
 ## Connect to USB-C
 - connect to device using Putty + USB-c interface
