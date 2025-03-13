@@ -4,11 +4,7 @@ Thanks to @Johandevlabs, fellow user including notes to install older WifiDongle
 [Main M5Stack links](https://docs.m5stack.com/en/guide/linux/coremp135/image)
 
 
-## Image burning
-- Once Image is burnt (sdcard.img ) to sdcard using BalenaEtcher 1.18.11 ( 1.19.25 was returning an error on file open )
-- [pre-compiled images](https://docs.m5stack.com/en/guide/linux/coremp135/image#1.download%20image%20file)
-
-## Libraries
+## Links
 [M5Stack_Linux_Libs](https://github.com/m5stack/M5Stack_Linux_Libs)<br>
 [CoreMP135_buildroot](https://github.com/m5stack/CoreMP135_buildroot)<br>
 [CoreMP135_buildroot-external-st](https://github.com/m5stack/CoreMP135_buildroot-external-st)<br>
@@ -16,6 +12,13 @@ Thanks to @Johandevlabs, fellow user including notes to install older WifiDongle
 
 [Schematic mid Layer](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/497/Sch_M5_CoreMP1_MidLayer_2024-04-24.pdf)<br>
 [Schematic CPU ](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/497/Sch_M5_CoreMP135_2024-04-24.pdf)<br>
+
+[ILI9342C specsheet](https://www.orientdisplay.com/wp-content/uploads/2021/02/ILI9342C_AN_01_20111228.pdf)<br>
+
+# 1. Extra details
+## Image burning
+- Once Image is burnt (sdcard.img ) to sdcard using BalenaEtcher 1.18.11 ( 1.19.25 was returning an error on file open )
+- [pre-compiled images](https://docs.m5stack.com/en/guide/linux/coremp135/image#1.download%20image%20file)
 
 ## Connect to USB-C
 - connect to device using Putty + USB-c interface
