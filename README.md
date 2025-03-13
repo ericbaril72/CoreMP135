@@ -12,9 +12,10 @@ Thanks to @Johandevlabs, fellow user including notes to install older WifiDongle
 [M5Stack_Linux_Libs](https://github.com/m5stack/M5Stack_Linux_Libs)<br>
 [CoreMP135_buildroot](https://github.com/m5stack/CoreMP135_buildroot)<br>
 [CoreMP135_buildroot-external-st](https://github.com/m5stack/CoreMP135_buildroot-external-st)<br>
+[Buildroot Tutorial](https://bootlin.com/doc/training/buildroot/buildroot-slides.pdf)<br>
 
-[Schematic mid Layer](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/497/Sch_M5_CoreMP1_MidLayer_2024-04-24.pdf)
-[Schematic CPU ](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/497/Sch_M5_CoreMP135_2024-04-24.pdf)
+[Schematic mid Layer](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/497/Sch_M5_CoreMP1_MidLayer_2024-04-24.pdf)<br>
+[Schematic CPU ](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/497/Sch_M5_CoreMP135_2024-04-24.pdf)<br>
 
 ## Connect to USB-C
 - connect to device using Putty + USB-c interface
@@ -35,7 +36,7 @@ Thanks to @Johandevlabs, fellow user including notes to install older WifiDongle
 # Development
 ## help links for uboot cmd_show_logo task
 https://stackoverflow.com/questions/53374999/custom-u-boot-environment-variables-using-buildroot
-https://bootlin.com/doc/training/buildroot/buildroot-slides.pdf
+
 
 
 # Change UBOOT displayed Logo
