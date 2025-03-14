@@ -63,9 +63,12 @@ Whitin your (workpath)/CoreMP135_buildroot  Directory
 ## edit cmd_show_logo.c
 output/build/uboot-custom/cmd/cmd_show_logo.c
 
+
 Quick BMP to "C" code convertion: https://notisrac.github.io/FileToCArray/
 BUT output file creates 16bits array ...
 using convert.py to generate proper 8bits array
 
+### generating a patch file
+diff -u "old_file" "new_file" > file.patch
 
 
