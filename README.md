@@ -3,6 +3,7 @@ My own dev notes on using the M5Stack CoreMP135<br>
 Thanks to @Johandevlabs, fellow user including notes to install older WifiDongle : https://github.com/johandevlabs/CoreMP135-Debian-notes<br>
 Another usefull fellow user : https://remyhax.xyz/posts/m5stack-coremp135/
 
+[M5stack CoreMP135](https://docs.m5stack.com/en/core/M5CoreMP135)
 [Main M5Stack links](https://docs.m5stack.com/en/guide/linux/coremp135/image)
 
 
