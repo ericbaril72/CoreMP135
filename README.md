@@ -74,8 +74,11 @@ diff -u "old_file" "new_file" > file.patch
 
 ## VERY quick image burning
 Copy you sdcard.img to a previously programmed and actively running CoreMP135 device
-> scp sdcard.img ericadmin@CoreMP135:./MP135/
+> scp output/images/sdcard.img ericadmin@CoreMP135:.
 
 install your target sdcard into the USB2.0 interface of CoreMP135
-> sudo dd if=sdcard.img of=/dev/sda bs=1M status=progress oflag=dsync && sync
+> sudo dd if=sdcard.img of=/dev/sda bs=1M status=progress oflag=dsync && sync 
+or self update
+> dd if=sdcard.img of=/dev/mmblk0 bs=1M && sync
+
 
