@@ -3,8 +3,8 @@ My own dev notes on using the M5Stack CoreMP135<br>
 Thanks to @Johandevlabs, fellow user including notes to install older WifiDongle : https://github.com/johandevlabs/CoreMP135-Debian-notes<br>
 Another usefull fellow user : https://remyhax.xyz/posts/m5stack-coremp135/
 
-[M5stack CoreMP135](https://docs.m5stack.com/en/core/M5CoreMP135)
-[Main M5Stack links](https://docs.m5stack.com/en/guide/linux/coremp135/image)
+[M5stack CoreMP135](https://docs.m5stack.com/en/core/M5CoreMP135)<br>
+[Main M5Stack links](https://docs.m5stack.com/en/guide/linux/coremp135/image)<br>
 
 
 ## Links
@@ -17,6 +17,12 @@ Another usefull fellow user : https://remyhax.xyz/posts/m5stack-coremp135/
 [Schematic CPU ](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/497/Sch_M5_CoreMP135_2024-04-24.pdf)<br>
 
 [ILI9342C specsheet](https://www.orientdisplay.com/wp-content/uploads/2021/02/ILI9342C_AN_01_20111228.pdf)<br>
+
+[STM32MP - ARM Cortex-A & Linux ](https://www.st.com/content/ccc/resource/training/technical/product_training/group1/7a/bb/02/0b/e6/77/45/6e/stm32mp1-series-software-architecture-and-secure-boot/files/stm32mp1-series-software-architecture-and-secure-boot.pdf/jcr:content/translations/en.stm32mp1-series-software-architecture-and-secure-boot.pdf)<br>
+Arm cortex-A provides Secure and non-secure execution modes.  This presentation explains how peropherals are initialized 
+
+[OpenSTLinux ARchitecture details](https://wiki.st.com/stm32mpu/index.php?title=STM32MPU_Embedded_Software_architecture_overview&oldid=80273)
+![blablabla](https://wiki.st.com/stm32mpu/nsfr_img_auth.php/9/9c/STM32MPU_Embedded_Software_architecture_overview.png)
 
 # 1. Extra details
 ## Image burning
