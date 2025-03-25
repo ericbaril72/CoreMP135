@@ -5,6 +5,7 @@ Another usefull fellow user : https://remyhax.xyz/posts/m5stack-coremp135/
 
 [M5stack CoreMP135](https://docs.m5stack.com/en/core/M5CoreMP135)<br>
 [Main M5Stack links](https://docs.m5stack.com/en/guide/linux/coremp135/image)<br>
+[Lolin stm32MP157-dk build instructions](https://bootlin.com/blog/building-a-linux-system-for-the-stm32mp1-basic-system/)<br>
 
 
 ## Links
