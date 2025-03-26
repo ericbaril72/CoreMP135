@@ -89,3 +89,22 @@ or self update
 > dd if=sdcard.img of=/dev/mmblk0 bs=1M && sync
 
 
+## Untested boot uart stuff
+STM32MP1xx platforms from ST uses the STlinkV2.2 mounted to UART4 but the M5Stack CoreMP135 uses those pins differently.
+M5Stack changed DTC files to use USART6 ( port-C ) in linux resolving to ttySTM0
+<br>BUT<br>
+it doesn't work so far with my trials on u-boot.
+
+found in OpTEE-os-custom:
+~/CoreMP135/CoreMP135_buildroot/output/build/optee-os-custom/core/arch/arm/plat-stm32mp1/platform_config.h
+line 177# #define STM32MP1_DEBUG_USART_BASE	UART4_BASE  > changing to UART6_BASE
+
+found in 
+/home/ericb/CoreMP135/CoreMP135_buildroot/output/build/optee-os-custom/core/arch/arm/plat-stm32mp1/conf.mk
+line 330# CFG_STM32_EARLY_CONSOLE_UART ?= 6    ( was 4 !!!)
+
+## unknown if required
+make optee-client-rebuild
+## rebuilds tee.bin used by trusted-firmware
+make optee-os-rebuild
+cd outp  cdasd
