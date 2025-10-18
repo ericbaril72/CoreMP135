@@ -1,6 +1,6 @@
 # Clone this project with all sub modules
 > git clone https://github.com/ericbaril72/CoreMP135.git
-# including buidlroot and M5stack-builodroot-pacakge
+# including buidlroot and M5stack-builodroot-package
 # > git clone --recurse-submodules https://github.com/ericbaril72/CoreMP135.git
 
 
