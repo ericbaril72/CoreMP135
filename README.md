@@ -51,9 +51,22 @@ Arm cortex-A provides Secure and non-secure execution modes.  This presentation 
 https://stackoverflow.com/questions/53374999/custom-u-boot-environment-variables-using-buildroot
 
 
+## CoreMP135 Bootup process
+1- On power-up, the CPU checks BOOTn pins ( 1-0-1 ) and starts loading from SD card.
 
-# Change UBOOT displayed Logo
-On device power-up, a CoreMP135 logo gets shown within 1-2 seconds.  This one is transfered to the LCD via spi via the UBOOT bootloader command "show_logo"
+2- SDcard first partition contains linux U-BOOT
+U-Boot is a bootloader that does minor CPU initialisation and starts loading the linux kernel file
+based on u-boot config, the kernel file might need to be signed and/or encrypted
+u-boot initialize the uart terminal pins, the base  LCD init with startup-logo
+
+3- Linux kernel start
+
+
+
+## Change UBOOT displayed Logo
+On device power-up, a CoreMP135 logo gets shown within 1-2 seconds.  
+This one is transfered to the LCD via spi via the UBOOT bootloader command "show_logo"
+
 Whitin your (workpath)/CoreMP135_buildroot  Directory
 > make uboot-menuconfig
 --> Boot options > Autoboot options > Delay in seconds before automatically booting = 0   ( way faster ! )
