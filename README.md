@@ -51,7 +51,7 @@ Arm cortex-A provides Secure and non-secure execution modes.  This presentation 
 > adduser <user1>
 > usermod -aG sudo <user1>
 
-# Development
+# 2. Development
 ## help links for uboot cmd_show_logo task
 https://stackoverflow.com/questions/53374999/custom-u-boot-environment-variables-using-buildroot
 
@@ -126,3 +126,51 @@ make optee-client-rebuild
 ## rebuilds tee.bin used by trusted-firmware
 make optee-os-rebuild
 cd outp  cdasd
+
+
+# 3. GPIO's
+ modern character device (char device) interface     /dev/gpiochip0
+ deprecated (sysfs) interface                        /sys/class/gpio/gpiochip0
+
+ references to help better understand GPIOs within linux:
+    https://github.com/gpiozero
+    https://gpiozero.readthedocs.io/en/stable/index.html
+    https://libgpiod.readthedocs.io/en/latest/index.html
+    https://pypi.org/project/gpiod/
+    https://github.com/joan2937/pigpio/tree/master
+    
+## OUTPUT first method  - using OS cli
+- login as root to avoid privilege issues ( will figure out proper user group later )
+- # ls -l /sys/class/gpio will show the different cpu "ports"
+    gpiochip0 => PORTA
+    gpiochip16 => PORTB
+    gpiochip32
+    gpiochip48
+    gpiochip64
+    gpiochip80
+    gpiochip96
+    gpiochip112
+    gpiochip128
+
+### activate
+- to activate  PB13  ( port B is 16    + offset 13  = 29 )
+  # echo 29 > /sys/class/gpio/export
+
+- Now, PB13 is shown if you type the "ls" command
+### set direction
+- # echo out > /sys/class/gpio/PB13/direction
+  
+### set value
+- # echo 1 > /sys/class/gpio/PB13/value
+- # echo 0 > /sys/class/gpio/PB13/value
+
+
+# Using SK6812 leds
+https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf
+raspi wk2812 resource : https://github.com/jgarff/rpi_ws281x
+
+Core2 BUS pinout : https://github.com/m5stack/M5Core2?tab=readme-ov-file#m5core2-m-bus-schematic-diagram       PB13   = pin8
+CoreMP135 BUS pinout : https://docs.m5stack.com/en/core/M5CoreMP135#m5-bus                                     G25    = pin8
+Core2_battery_sk6812 : https://docs.m5stack.com/en/base/m5go_bottom2#m5-bus                                    RGBled = pin8
+
+
