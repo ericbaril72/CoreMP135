@@ -141,7 +141,10 @@ cd outp  cdasd
     
 ## OUTPUT first method  - using OS cli
 - login as root to avoid privilege issues ( will figure out proper user group later )
-- # ls -l /sys/class/gpio will show the different cpu "ports"
+- show the different cpu "ports"
+  ```
+  # ls -l /sys/class/gpio will
+  ```
     gpiochip0 => PORTA
     gpiochip16 => PORTB
     gpiochip32
@@ -154,16 +157,24 @@ cd outp  cdasd
 
 ### activate
 - to activate  PB13  ( port B is 16    + offset 13  = 29 )
-  # echo 29 > /sys/class/gpio/export
+```
+# echo 29 > /sys/class/gpio/export
+```
 
 - Now, PB13 is shown if you type the "ls" command
 ### set direction
-- # echo out > /sys/class/gpio/PB13/direction
+```
+# echo out > /sys/class/gpio/PB13/direction
+```
   
 ### set value
-- # echo 1 > /sys/class/gpio/PB13/value
-- # echo 0 > /sys/class/gpio/PB13/value
-
+```
+# echo 1 > /sys/class/gpio/PB13/value
+```
+### clear value
+```
+# echo 0 > /sys/class/gpio/PB13/value
+```
 
 # Using SK6812 leds
 https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf
