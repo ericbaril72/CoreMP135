@@ -127,6 +127,10 @@ make optee-client-rebuild
 make optee-os-rebuild
 cd outp  cdasd
 
+## UBOOT uart
+Port C can provide UBOOT bootup information
+--> TX and RX pins are REVERSED
+
 
 # 3. GPIO's
  modern character device (char device) interface     /dev/gpiochip0
