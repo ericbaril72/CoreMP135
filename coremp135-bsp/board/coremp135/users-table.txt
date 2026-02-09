@@ -1,0 +1,2 @@
+john      -2  devs  -2  fake     /home/john /bin/sh admin,users "John Doe"
+ericb     -2  users -2  =fake     /home/ericb /bin/sh -         "Eric Baril"

@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# Start/stop tailscaled
+#
+
+
+
+case "$1" in
+  start)
+	echo "Starting shutdown..."
+	;;
+  stop)
+	echo "Stopping and shutdown..."
+	tinyplay /usr/local/m5stack/win_shutdown.wav
+	;;
+  restart)
+	"$0" stop
+	sleep 1 # Prevent race condition: ensure stops before start.
+	"$0" start
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
