@@ -35,6 +35,12 @@ sudo tar -xvzf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz -C /op
 ```mkdir CoreMP135
 cd CoreMP135
 ```
+    .
+    ├── CoreMP135/
+    │   ├── M5Stack_Linux_Libs/
+    │   ├── coremp135-bsp/
+    │   ├── buildroot/
+    
 
 
 
@@ -45,5 +51,19 @@ git clone <this repo>
 
 ## C and CPP based development environment with examples
 
-```git clone https://github.com/m5stack/M5Stack_Linux_Libs```
+```
+git clone https://github.com/m5stack/M5Stack_Linux_Libs
+cd M5Stack_Linux_Libs/examples/hello_world
+scons menuconfig
+```
+1. Press Enter to enter Toolchain Configuration
+2. Press Enter to fill the "Toolchain path"
+3. type the absolute path from the Cross-compiler installation: /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin
+4. Press Enter to fill the "Toolchain prefix": arm-linux-gnueabihf-
+5. Press ESC-ESC and "Save to Config"
+
+```
+scons
+```
+will now build & link the software, ready to upload and run
 
