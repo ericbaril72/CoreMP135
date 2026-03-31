@@ -52,6 +52,9 @@ Arm cortex-A provides Secure and non-secure execution modes.  This presentation 
 > usermod -aG sudo <user1>
 
 # 2. Development
+## Installing the full toolchain
+https://github.com/ericbaril72/CoreMP135/blob/main/mini_projects/toolchain/README.md
+
 ## help links for uboot cmd_show_logo task
 https://stackoverflow.com/questions/53374999/custom-u-boot-environment-variables-using-buildroot
 
