@@ -8,12 +8,12 @@ I finally decided to mount a real Ubuntu partition on my PC and it requires to i
 
 
 # Installing the toolchain from scratch
-'''
+```
 sudo apt update
 sudo apt upgrade
 
 sudo apt install make cmake
-'''
+```
 
 ## Python and virtual environment
 sudo apt install python3.12-dev python3.12-venv
