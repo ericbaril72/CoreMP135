@@ -12,7 +12,7 @@ I finally decided to mount a real Ubuntu partition on my PC and it requires to i
 sudo apt update
 sudo apt upgrade
 
-sudo apt install make cmake
+sudo apt install build-essential make cmake
 ```
 
 ## Python and virtual environment
@@ -77,3 +77,20 @@ cd ~/CoreMP135/buildroot
 make BR2_EXTERNAL=../coremp135-bsp/ coremp135_defconfig
 make
 ```
+Have a beer ... this may take a while
+
+The Buildroot script goes through all of the defconfig file parameters and checks for all required host and target packages and does the following:
+- download the package src to buildroot/dl
+- unzip the package to buildroot/output/build
+- applies the package patches ( as per defconfig )
+- configures the package ( as per defconfig )
+- build the package
+
+This defconfig file also runs theese scripts:
+- post-build.sh
+- post-image.sh
+
+
+
+
+
