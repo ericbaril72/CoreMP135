@@ -52,6 +52,7 @@ Arm cortex-A provides Secure and non-secure execution modes.  This presentation 
 > usermod -aG sudo <user1>
 
 # 2. Development
+
 ## Installing the full toolchain
 https://github.com/ericbaril72/CoreMP135/blob/main/mini_projects/toolchain/README.md
 
