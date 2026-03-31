@@ -12,7 +12,7 @@ I finally decided to mount a real Ubuntu partition on my PC and it requires to i
 sudo apt update
 sudo apt upgrade
 
-sudo apt install build-essential make cmake
+sudo apt install build-essential make cmake libncurses-dev libssl-dev
 ```
 
 ## Python and virtual environment
@@ -90,6 +90,33 @@ This defconfig file also runs theese scripts:
 - post-build.sh
 - post-image.sh
 
+post-image.sh generates the sdcard.img file found in  ~/CoreMP135/buildroot/output/images/sdcard.img
+
+## Preparing your first boot SDCARD
+before inserting the card into your PC, check for allready present "SD*" device
+```
+lsblk -f | grep sd
+```
+
+insert you SDcard into the USB-SDcard adaptor and connect to your PC
+```
+lsblk -f | grep sd
+```
+
+Note if "sda" / "sdb" or other
+
+
+write the image onto the sdcard ( approx 1.6GB )
+```
+cd ~/CoreMP135/buildroot/output/images/
+ls sdcard.img
+
+sudo dd if=sdcard.img of=/dev/sdbx bs=1M status=progress oflag=dsync sync
+```
+
+remove the sdcard from your PC, insert into you CoreMP135 and apply power.
+
+Tadam !
 
 
 
