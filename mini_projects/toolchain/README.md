@@ -1,8 +1,8 @@
 # Windows vs Ubuntu
 WSL has done a lot for me developping software in a Ubuntu environment along with tons of Docker Containers
 
-However, simple tools like <dd> to write on a USB sdcard does not work.
-Using a USB device on Ubuntu often requires to re-apply < usbipd share > command
+However, simple tools like dd to write on a USB sdcard do not work.
+Using a USB device on Ubuntu often requires to re-apply  "usbipd share"  command
 
 I finally decided to mount a real Ubuntu partition on my PC and it requires to install the full toolchain
 
