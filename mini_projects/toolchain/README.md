@@ -32,7 +32,8 @@ sudo tar -xvzf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz -C /op
 ```
 
 ## Project Directory
-```mkdir CoreMP135
+```
+mkdir CoreMP135
 cd CoreMP135
 ```
     .
@@ -45,7 +46,8 @@ cd CoreMP135
 
 
 ## Buildroot and external defconfig
-```git clone git@github.com:m5stack/CoreMP135_buildroot.git
+```
+git clone git@github.com:m5stack/CoreMP135_buildroot.git
 ```
 git clone <this repo>
 
