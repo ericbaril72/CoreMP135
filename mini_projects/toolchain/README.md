@@ -48,8 +48,9 @@ cd CoreMP135
 ## Buildroot and external defconfig
 ```
 git clone git@github.com:m5stack/CoreMP135_buildroot.git
+git clone \<this repo\>
 ```
-git clone <this repo>
+
 
 ## C and CPP based development environment with examples
 
